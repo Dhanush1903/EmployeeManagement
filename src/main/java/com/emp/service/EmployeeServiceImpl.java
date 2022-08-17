@@ -30,6 +30,19 @@ public class EmployeeServiceImpl  implements IEmployeeService{
 	
 		return employeeRepository.findById(id);
 	}
+
+	@Override
+	public void deleteEmployee(Integer id) {
+		// TODO Auto-generated method stub
+		employeeRepository.deleteById(id);
+		
+	}
+
+	@Override
+	public void deleteallEmployees() {
+		
+		 employeeRepository.deleteAll();;
+	}
 	
 
 }
